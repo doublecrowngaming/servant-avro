@@ -1,0 +1,30 @@
+name: servant-avro
+version: 0.0.0.0
+synopsis: Avro content type for Servant
+description: See README
+maintainer: Jesse Kempf
+github: doublecrowngaming/servant-avro
+
+ghc-options: -Wall -O2
+
+default-extensions:
+- StrictData
+
+dependencies:
+  - base >= 4.7 && < 5
+  - avro
+  - servant
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - Servant.API.ContentTypes.Avro
+
+tests:
+  spec:
+    main: Spec.hs
+    source-dirs:
+      - test
+    dependencies:
+      - servant-avro
+      - hspec >=2.0.0
