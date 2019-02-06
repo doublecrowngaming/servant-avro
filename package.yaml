@@ -1,11 +1,13 @@
 name: servant-avro
 version: 0.1.0.0
 synopsis: Avro content type for Servant
-description: See README
+description: This package lets Servant use Avro for encoding request data
 maintainer: Jesse Kempf
 github: doublecrowngaming/servant-avro
+license: BSD3
+category: Servant, Web
 
-ghc-options: -Wall -O2
+ghc-options: -Wall
 
 default-extensions:
 - StrictData
