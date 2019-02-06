@@ -1,5 +1,5 @@
 name: servant-avro
-version: 0.0.0.0
+version: 0.1.0.0
 synopsis: Avro content type for Servant
 description: See README
 maintainer: Jesse Kempf
@@ -27,4 +27,10 @@ tests:
       - test
     dependencies:
       - servant-avro
+      - servant-client
+      - servant-server
       - hspec >=2.0.0
+      - http-client
+      - QuickCheck
+      - text
+      - warp
